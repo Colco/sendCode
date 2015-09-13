@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>sendCode</title>
+    <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="public.js"></script>
+    <style>
+        a{
+            display: inline-block;
+            border: 1px solid rgb(221, 221, 221);
+            width: 100px;
+            height: 27px;
+            background: rgb(244, 244, 244);
+            color: rgb(0, 0, 0);
+            line-height: 27px;
+            text-decoration: none;
+            text-align: center;
+        }
+        input{
+            width: 200px;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+<label>手机号:</label><input type="text" maxlength="15" name="phone" class="phoneVal">
+<span><a href="#" class="sendButton">发送验证码</a></span>
+<script>
+    $('.sendButton').sendCode();
+</script>
+</body>
+</html>
