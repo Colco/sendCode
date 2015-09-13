@@ -27,7 +27,11 @@
 <label>手机号:</label><input type="text" maxlength="15" name="phone" class="phoneVal">
 <span><a href="#" class="sendButton">发送验证码</a></span>
 <script>
-    $('.sendButton').sendCode();
+    $('.sendButton').sendCode({
+		//time:30 default;
+		//url:getCode() default;
+		//phoneVal:phoneVal; tag class for phone default
+		});
 </script>
 </body>
 </html>
